@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "horror_addon:horror_armor",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:armor": {
+        "protection": 5
+      },
+      "minecraft:wearable": {
+        "slot": "chest",
+        "protection": 5
+      },
+      "minecraft:durability": {
+        "max_durability": 275
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "horror_addon:horror_mob",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "horror_mob": {
+        "minecraft:physics": {
+          "has_collision": true,
+          "has_gravity": true
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:health": {
+          "value": 100,
+          "max": 100
+        },
+        "minecraft:behavior": {
+          "hide": {
+            "priority": 1
+          },
+          "follow_player": {
+            "priority": 2,
+            "speed_multiplier": 0.2
+          }
+        }
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["horror_mob"]
+        }
+      }
+    }
+  }
+}

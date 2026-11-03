@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "horror_addon:horror_sword",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:weapon": {
+        "damage": 10
+      },
+      "minecraft:durability": {
+        "max_durability": 1561
+      }
+    }
+  }
+}
